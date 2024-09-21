@@ -1,22 +1,43 @@
 <!DOCTYPE html>
 <html lang="en">
+    <meta name="viewport" content="width=device-width,initial-scale=1"/>
     <head>
     <title>FAQs</title>
     <link rel="icon" href="icon.png"/>
     <link rel="stylesheet" href="faq.css">
     </head>
     <body>
-        <div class="banner">
-            <div class="home">
-                <button type="button" onclick="location.href='index.html'" title="Home">Home<span></span></button>
-            </div>
-        <div class="faq">    
-        <h1><u>Frequently asked questions!</u></h1>
-        <h2>1.)What are the features in the bot?</h2>
-             <li>Well it's still under development....so i guess imagination is the limit?</li>
-        <h3>2.)Do we need to pay for anything?</h3>
-        <ol>No, I intend to keep everything free in future too!</ol>
-        </div>
+        <div id="faq" class="faq-body">
+          <div class="faq-header">
+            <h3 class="faq-title"><u>Frequently asked questions</u></h3>
+            <div class="seperator"></div>
+          </div>
+          <div class="faq-list">
+              <div>
+                <details open>
+                  <summary title="What are the features in the bot?">What are the features in the bot?</summary>
+                  <p class="faq-content">Well it's still under development....so i guess imagination is the limit?</p>
+                </details>
+                </div>
+              <div>
+                <details>
+                  <summary title="Do we need to pay for anything?">Do we need to pay for anything?</summary>
+                  <p class="faq-content">No, I intend to keep everything free in future too</p>
+                </details>
+                </div>
+              <div>
+                <details>
+                  <summary title="Can i contribute in this project?">Can i contribute in this project?</summary>
+                  <p class="faq-content">Not yet, but maybe soon in near future</p>
+                </details>
+                </div>
+              <div>
+                <details>
+                  <summary title="What is the meaning of life?">What is the meaning of life?</summary>
+                  <p class="faq-content">i don't know mate.......cus i am in same boat as you!</p>
+                </details>
+                </div>
+          </div>
         </div>
     </body>
 </html>
