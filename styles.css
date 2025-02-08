@@ -58,11 +58,18 @@ button:hover span{
 button:hover{
     border: none;
 }
-.bar{
-    width: 100%;
-    margin: auto;
-    text-align: center;
+.bar {
+    position: absolute;
+    right: 20px;
+    top: 20px;
 }
+
+.bar ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+
 .bar ul li{
     list-style-type: none;
     display:  inline-block;
@@ -105,6 +112,29 @@ footer {
     font-family: CC;
     font-size: 0.9em;
 }
+.qr-section {
+    margin: 40px auto;
+    color: honeydew;
+    font-family: CC;
+    max-width: 300px;
+}
+
+.qr-code {
+    width: 150px;
+    height: 150px;
+    background-color: white;
+    padding: 10px;
+    border-radius: 10px;
+    margin: 15px auto;
+    align-content: center;
+}
+
+.qr-text {
+    font-size: 1.1em;
+    line-height: 1.5;
+    margin: 15px 0;
+}
+
 /*Ummm....yea it makes it resize? YEAH IT MAKES IT RESPONSIVE!*/
 @media screen and (max-width: 768px) {
     .title {
