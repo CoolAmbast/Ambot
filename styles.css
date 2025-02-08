@@ -1,3 +1,7 @@
+@font-face {
+    font-family: CC;
+    src: url(CCLetterbot\ Bold.woff);
+  }
 body{
     display: flex;
     justify-content: center;
@@ -5,7 +9,7 @@ body{
 }
 .title{
     color: honeydew;
-    font-family: cursive;
+    font-family: CC;
     text-align: center;
     text-transform: capitalize;
     padding-top: 120px;
@@ -13,7 +17,7 @@ body{
 }
 .des{
     color: honeydew;
-    font-family: cursive;
+    font-family: cc;
     text-align: center;
     text-transform: lowercase;
     padding-top: 0;
@@ -29,7 +33,7 @@ button{
     text-align: center;
     margin: 20px 10px;
     border-radius: 25px;
-    font-family: cursive;
+    font-family: CC;
     border: 2px solid #009688;
     background: transparent;
     color: honeydew;
@@ -65,7 +69,7 @@ button:hover{
     margin: 0 20px;
     position: relative;
     color: honeydew;
-    font-family: cursive;
+    font-family: CC;
     text-transform: capitalize;
     padding-right: 10px;
 }
@@ -98,7 +102,7 @@ footer {
     bottom: 20px;
     left: 20px;
     color: honeydew;
-    font-family: cursive;
+    font-family: CC;
     font-size: 0.9em;
 }
 /*Ummm....yea it makes it resize? YEAH IT MAKES IT RESPONSIVE!*/
