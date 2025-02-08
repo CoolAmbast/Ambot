@@ -1,0 +1,141 @@
+body{
+    display: flex;
+    justify-content: center;
+    background-image:linear-gradient(rgba(0,0,0,0.75),rgba(0,0,0,0.75)), url(websitebg.gif);
+}
+.title{
+    color: honeydew;
+    font-family: cursive;
+    text-align: center;
+    text-transform: capitalize;
+    padding-top: 120px;
+    font-size: xx-large;
+}
+.des{
+    color: honeydew;
+    font-family: cursive;
+    text-align: center;
+    text-transform: lowercase;
+    padding-top: 0;
+}
+
+ul{
+    list-style: none;
+}
+
+button{
+    width: 200px;
+    padding: 15px 0;
+    text-align: center;
+    margin: 20px 10px;
+    border-radius: 25px;
+    font-family: cursive;
+    border: 2px solid #009688;
+    background: transparent;
+    color: honeydew;
+    cursor: pointer;
+    position: relative;
+    overflow: hidden;
+}
+span{
+    background: #009688;
+    height: 100%;
+    width: 0;
+    border-radius: 25px;
+    position: absolute;
+    left: 0;
+    bottom: 0;
+    z-index: -1;
+    transition: 0.3s;
+}
+button:hover span{
+    width: 100%;
+}
+button:hover{
+    border: none;
+}
+.bar{
+    width: 100%;
+    margin: auto;
+    text-align: center;
+}
+.bar ul li{
+    list-style-type: none;
+    display:  inline-block;
+    margin: 0 20px;
+    position: relative;
+    color: honeydew;
+    font-family: cursive;
+    text-transform: capitalize;
+    padding-right: 10px;
+}
+.bar ul li a{
+    text-decoration: none;
+    color: honeydew;
+    text-transform: capitalize;
+}
+.bar ul li::after{
+    border-radius: 15%;
+    content: '';
+    height: 5px;
+    width: 0;
+    background: #009688;
+    position: absolute;
+    left: 0;
+    bottom: -10px;
+    transition: 0.2s;
+}
+.bar ul li:hover::after{
+    width: 100%;
+}
+
+.logo{
+    height: 128px;
+    width: 128px;
+}
+footer {
+    position: fixed;
+    bottom: 20px;
+    left: 20px;
+    color: honeydew;
+    font-family: cursive;
+    font-size: 0.9em;
+}
+/*Ummm....yea it makes it resize? YEAH IT MAKES IT RESPONSIVE!*/
+@media screen and (max-width: 768px) {
+    .title {
+        padding-top: 60px;
+    }
+
+    .bar ul {
+        padding: 0 10px;
+    }
+
+    .bar ul li {
+        padding: 5px;
+    }
+
+    footer {
+        left: 10px;
+        bottom: 10px;
+    }
+}
+
+@media screen and (max-width: 480px) {
+    main {
+        padding: 10px;
+    }
+
+    .title {
+        padding-top: 40px;
+    }
+
+    .des h2 {
+        padding: 0 10px;
+    }
+
+    button {
+        margin: 15px 5px;
+        padding: 12px 0;
+    }
+}
